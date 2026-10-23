@@ -117,3 +117,74 @@ ul li a {
 ul li a:hover {
   background-color: #111111;
 }
+
+/* Centraliza o conteúdo entre o cabeçalho e rodapé */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Garante espaço vertical no meio da página */
+    background-color: #1a1a1a;
+    font-family: Arial, sans-serif;
+}
+
+/* Container do Jogo (Usado também para a Tela Cheia) */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Placar de Pontos */
+.score-board {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Canvas do Tetris */
+#tetris {
+    border: 4px solid #fff;
+    background-color: #000;
+}
+
+/* Botão de Tela Cheia */
+#fullscreen-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#fullscreen-btn:hover {
+    background-color: #218838;
+}
+
+/* Dica de controles */
+.controls-hint {
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Ajustes automáticos quando estiver em Modo Tela Cheia */
+#game-container:fullscreen {
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 0;
+}
+#game-container:fullscreen #tetris {
+    height: 80vh; /* Aumenta o tamanho do jogo na tela cheia */
+}

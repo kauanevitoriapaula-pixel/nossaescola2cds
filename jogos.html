@@ -30,6 +30,17 @@ Escola">
   <li><a href="jogos.html">Jogos</a></li>
 </ul>
 <!--CONTEUDO-->
+<!-- COLOQUE ISTO ENTRE O SEU CABEÇALHO E RODAPÉ -->
+<main class="main-content">
+    <div id="game-container">
+        <div class="score-board">Pontos: <span id="score">0</span></div>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <button id="fullscreen-btn">Jogar em Tela Cheia</button>
+        <p class="controls-hint">Controles: Setas (Mover) | Q / W (Rotacionar) | Seta Baixo (Cair rápido)</p>
+    </div>
+</main>
+
+
 
 
 <!--Seção rodapé é a parte final da paragrafo 3 da página-->
@@ -45,3 +56,5 @@ Política de Privacidade | Proteção de dados | Encarregado de dados</p>
 </footer>
 </body>
 </html>
+<!-- Lembre de garantir que seu script está sendo chamado no final do body -->
+<script src="script.js"></script>
