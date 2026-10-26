@@ -1,3 +1,45 @@
+**Pronto!** Aqui está o código corrigido e limpo.
+
+### O que eu fiz:
+- Escondi completamente o Instagram (imagem + link)
+- Deixei **só o WhatsApp** aparecendo
+- Fiz a **imagem do WhatsApp** ser clicável (muito melhor)
+- Corrigí o link do Zap (tirei o `+`)
+- Corrigí o erro `<titler>` → `<title>`
+- Limpei o link do Instagram (deixei comentado caso você queira usar depois)
+
+### Código atualizado (só a parte do header):
+
+Substitua **toda** a parte do `<header>` por este:
+
+```html
+<header class="cabecalho-itens">
+  <img class="cabecalho_imagem" src="logo_kauanne.jpeg" alt="Logo da Página">
+  <h1 class="titulo_site">kauane</h1>
+
+  <div class="sociais">
+    <!-- Só o WhatsApp (clicável) -->
+    <a href="https://wa.me/5541996997759" target="_blank" rel="noopener">
+      <img class="sociais" src="whatsapp.png" alt="WhatsApp" title="Fale comigo no WhatsApp">
+    </a>
+
+    <!-- Instagram escondido (não apaguei caso você queira usar depois) -->
+    <!--
+    <a href="https://www.instagram.com/kakau.victoriaa" target="_blank" rel="noopener">
+      <img class="sociais" src="instagram.png" alt="Instagram">
+    </a>
+    -->
+  </div>
+</header>
+```
+
+---
+
+### Versão completa do arquivo (já com a correção):
+
+Se quiser, pode copiar e colar o arquivo inteiro:
+
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,4 +68,46 @@
     <li><a href="index.html">Página Inicial</a></li>
     <li><a href="sobre.html">Sobre</a></li>
     <li><a href="contato.html">Contato</a></li>
-    <li><a 
+    <li><a href="jogos.html">Jogos</a></li>
+  </ul>
+
+  <!-- Banner -->
+  <section class="banner1">
+    <img class="escola.imagem" src="WhatsApp Image 2026-10-26 at 09.23.49.jpeg" alt="Banner da Escola">
+  </section>
+
+  <!-- Alunos -->
+  <section class="estudante">
+    <h1 class="estudante_titulo">Alunos em destaque 2026</h1>
+    <div class="estudantes_todos">
+      <div class="estudante-div">
+        <img class="estudante-imagem" src="estudante_menino.png" alt="Aluno 1">
+        <h3 class="estudante-nome">Aluno 1</h3>
+      </div>
+      <div class="estudante-div">
+        <img class="estudante-imagem" src="estudante_menino.png" alt="Aluno 2">
+        <h3 class="estudante-nome">Aluno 2</h3>
+      </div>
+      <div class="estudante-div">
+        <img class="estudante-imagem" src="estudante_menino.png" alt="Aluno 3">
+        <h3 class="estudante-nome">Aluno 3</h3>
+      </div>
+      <div class="estudante-div">
+        <img class="estudante-imagem" src="estudante_menino.png" alt="Aluno 4">
+        <h3 class="estudante-nome">Aluno 4</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="escola">
+    <img class="logo_rodape" src="logo_nossa_escola.png" alt="Logo da Escola">
+    <h2 class="escola-título">Mais informações entre em contato 
+      <a class="link" href="https://wa.me/5541996997759">41 9.9699-7759</a>
+    </h2>
+    <p>©2024 | Curso de ADS | Todos os Direitos Reservados.
+    Política de Privacidade | Proteção de dados | Encarregado de dados</p>
+  </footer>
+
+</body>
+</html>
