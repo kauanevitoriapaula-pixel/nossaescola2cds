@@ -1,91 +1,96 @@
-
-<header class="cabecalho-itens">
-  <img class="cabecalho_imagem" src="logo_kauanne.jpeg" alt="Logo da Página">
-  <h1 class="titulo_site">kauane</h1>
-
-  <div class="sociais">
-    <!-- Só o WhatsApp (clicável) -->
-    <a href="https://wa.me/5541996997759" target="_blank" rel="noopener">
-      <img class="sociais" src="whatsapp.png" alt="WhatsApp" title="Fale comigo no WhatsApp">
-    </a>
-
-    <!-- Instagram escondido (não apaguei caso você queira usar depois) -->
-    <!--
-    <a href="https://www.instagram.com/kakau.victoriaa" target="_blank" rel="noopener">
-      <img class="sociais" src="instagram.png" alt="Instagram">
-    </a>
-    -->
-  </div>
-</header>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | kauane</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | kauane</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!--header é a parte do cabeçalho do site, é o topo da página-->
+<header class="cabecalho-itens">
+<img class="cabecalho_imagem" src="logo_kauanne.jpeg" alt="Logo da
+Página">
+<h1 class="titulo_site">kauane</h1>
+<div class="sociais">
 
-  <!-- Header -->
-  <header class="cabecalho-itens">
-    <img class="cabecalho_imagem" src="logo_kauanne.jpeg" alt="Logo da Página">
-    <h1 class="titulo_site">kauane</h1>
+ <!-- WhatsApp (agora clicável) -->
+ <a href="https://wa.me/5541996997759" target="_blank">
+   <img class="sociais" src="whatsapp.png" alt="Logo do Whats da Escola">
+ </a>
 
-    <div class="sociais">
-      <!-- Só o WhatsApp aparece e é clicável -->
-      <a href="https://wa.me/5541996997759" target="_blank" rel="noopener">
-        <img class="sociais" src="whatsapp.png" alt="WhatsApp" title="Fale comigo no WhatsApp">
-      </a>
-    </div>
-  </header>
+ <!-- Instagram escondido -->
+ <img class="sociais" src="instagram.png" alt="instagram da Escola" style="display: none;">
+ <a href="https://www.instagram.com/kakau.victoriaa?exln=b3Zka2lxMWpqNXgy" target="_blank" style="display: none;">
+   <i class="fab fa-instagram"></i> Instagram
+ </a>
 
-  <!-- Menu -->
-  <ul>
-    <li><a href="index.html">Página Inicial</a></li>
-    <li><a href="sobre.html">Sobre</a></li>
-    <li><a href="contato.html">Contato</a></li>
-    <li><a href="jogos.html">Jogos</a></li>
-  </ul>
+</div>
+</header>
+<!--menu-->
 
-  <!-- Banner -->
-  <section class="banner1">
-    <img class="escola.imagem" src="WhatsApp Image 2026-10-26 at 09.23.49.jpeg" alt="Banner da Escola">
-  </section>
+<ul>
+  <li><a href="index.html">Página Inicial</a></li>
+  <li><a href="sobre.html">Sobre</a></li>
+  <li><a href="contato.html">Contato</a></li>
+  <li><a href="jogos.html">Jogos</a></li>
+</ul>
 
-  <!-- Alunos -->
-  <section class="estudante">
-    <h1 class="estudante_titulo">Meus amigos</h1>
-    <div class="estudantes_todos">
-      <div class="estudante-div">
-        <img class="estudante-imagem" src="estudante_menino.png" alt="Aluno 1">
-        <h3 class="estudante-nome">Aluno 1</h3>
-      </div>
-      <div class="estudante-div">
-        <img class="estudante-imagem" src="estudante_menino.png" alt="Aluno 2">
-        <h3 class="estudante-nome">Aluno 2</h3>
-      </div>
-      <div class="estudante-div">
-        <img class="estudante-imagem" src="estudante_menino.png" alt="Aluno 3">
-        <h3 class="estudante-nome">Aluno 3</h3>
-      </div>
-      <div class="estudante-div">
-        <img class="estudante-imagem" src="estudante_menino.png" alt="Aluno 4">
-        <h3 class="estudante-nome">Aluno 4</h3>
-      </div>
-    </div>
-  </section>
 
-  <!-- Rodapé -->
-  <footer class="escola">
-    <img class="logo_rodape" src="logo_nossa_escola.png" alt="Logo da Escola">
-    <h2 class="escola-título">Mais informações entre em contato 
-      <a class="link" href="https://wa.me/5541996997759">41 9.9699-7759</a>
-    </h2>
-    <p>©2024 | Curso de ADS | Todos os Direitos Reservados.
-    Política de Privacidade | Proteção de dados | Encarregado de dados</p>
-  </footer>
 
+<!--Seção banner 1 é a parte do paragrafo 1 da página-->
+<section class="banner1">
+<img class="escola.imagem" src="WhatsApp Image 2026-10-26 at 09.23.49.jpeg" alt="Banner da Escola">
+</section>
+<!--Seção estudantes é a parte do paragrafo 2 da página -- "Meninos"-->
+<!--altere em "src="estudante_menino_1.png" para src"nome da imagem do menino em
+todos abaixo-->
+<!--altere em "src="site_school.png" para src"nome da logo em todos abaixo-->
+<!--para aumentar os alunos copie a div no edidor que corresponda desde a foto
+até os icones abaixo - dúvidas chame o professor-->
+<section class="estudante">
+<h1 class="estudante_titulo">Alunos em destaque 2026</h1>
+<p> </p>
+<div class="estudantes_todos">
+<div class="estudante-div">
+<img class="estudante-imagem" src="estudante_menino.png" alt="Foto da
+turma do 1CDS do ano de 2026">
+<h3 class="estudante-nome">Aluno 1</h3>
+</div>
+
+<div class="estudante-div">
+<img class="estudante-imagem" src="estudante_menino.png" alt="Foto da
+turma do 1CDS do ano de 2026">
+<h3 class="estudante-nome">Aluno 2</h3>
+
+</div>
+
+<div class="estudante-div">
+<img class="estudante-imagem" src="estudante_menino.png" alt="Foto da
+turma do 1CDS do ano de 2026">
+<h3 class="estudante-nome">Aluno 3</h3>
+</div>
+
+<div class="estudante-div">
+<img class="estudante-imagem" src="estudante_menino.png" alt="Foto da
+turma do 1CDS do ano de 2026">
+<h3 class="estudante-nome">Aluno 4</h3>
+</div>
+</section>
+
+
+
+
+<!--Seção rodapé é a parte final da paragrafo 3 da página-->
+<footer class="escola">
+<img class="logo_rodape" src="logo_nossa_escola.png" alt="Logo da Escola">
+<h2 class="escola-título">Mais informações entre em contato<a class="link"
+
+href="https://wa.me/5541999999999"> 41 9.9999-9999 </a></h2>
+<p></p>
+<p>©2024 | Curso de ADS | Todos os Direitos Reservados.
+Política de Privacidade | Proteção de dados | Encarregado de dados</p>
+<p> </p>
+</footer>
 </body>
 </html>
